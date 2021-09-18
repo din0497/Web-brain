@@ -1,17 +1,8 @@
 import img from "../assets/user.png";
+import { SelectWrapper } from "../Styled/Styled";
 const Select = (props) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        backgroundColor: "#F9FAFF",
-        flexDirection: "row",
-        padding: "20px",
-        width: "60px",
-        justifyContent: "space-between",
-        marginLeft: "15px",
-      }}
-    >
+    <SelectWrapper>
       <img src={img} style={{ width: "26px", height: "26px" }} />
       <select
         style={{
@@ -22,7 +13,7 @@ const Select = (props) => {
       >
         <option>Killua</option>
       </select>
-    </div>
+    </SelectWrapper>
   );
 };
 export default Select;

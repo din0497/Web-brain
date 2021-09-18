@@ -40,7 +40,15 @@ export const Icon = styled.div`
   align-items: center;
   justify-content: center;
   background: ${props=>props.color};
-  border-radius: 50%;
+  border-radius: 50px;
   width: 50px;
   height: 50px;;
 `;
+export const StatSty = styled.div`
+width:20vw;
+@media (max-width: 510px){
+  
+   margin-left: 0px;
+
+ }
+`

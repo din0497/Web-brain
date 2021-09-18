@@ -3,24 +3,22 @@ import { FaBorderAll } from "react-icons/fa";
 import { GoCreditCard } from "react-icons/go";
 import { FiUsers, FiSettings } from "react-icons/fi";
 import { RiCalculatorLine } from "react-icons/ri";
-import { H4, Ul } from "../Styled/Styled";
+import { H4, MenuWrapper, Ul } from "../Styled/Styled";
 import List from "./List";
 
 const Menu = () => {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", paddingLeft: "25px" }}
-    >
+    <MenuWrapper>
       <H4>Menu</H4>
       <Ul>
-        <List icon={<AiOutlineHome />} text="Home" />
-        <List icon={<FaBorderAll />} text="Garage" />
-        <List icon={<GoCreditCard />} text="Service Menu" />
-        <List icon={<FiUsers />} text="Racers" />
-        <List icon={<RiCalculatorLine />} text="Calculator" />
-        <List icon={<FiSettings />} text="Settings" />
+        <List icon={<AiOutlineHome />} link='/home' text="Home" />
+        <List icon={<FaBorderAll />} link='/garage' text="Garage" />
+        <List icon={<GoCreditCard />} link='/service' text="Service Menu" />
+        <List icon={<FiUsers />} link='/racers' text="Racers" />
+        <List icon={<RiCalculatorLine />} link='/calculator' text="Calculator" />
+        <List icon={<FiSettings />} link='/settings' text="Settings" />
       </Ul>
-    </div>
+    </MenuWrapper>
   );
 };
 

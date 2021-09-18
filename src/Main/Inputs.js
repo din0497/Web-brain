@@ -17,19 +17,19 @@ const Inputs = () => {
         type="search"
         placeholder="Search for a race, car or racer"
         style={{
-          width: "517px",
-          height: "50px",
-          padding: "25px",
+          width: "37.84773060029283vw",
+          height: "5vw",
+          padding: "0.7vw",
           borderColor: "#E7E7E7",
           outline: "none",
         }}
       />
       <select
         style={{
-          width: "310px",
-          height: "50px",
+          width: "22.693997071742313vw",
+          height: "5vw",
           marginLeft: "34px",
-          padding: "10px",
+          padding: "0.7vw",
           borderColor: "#E7E7E7",
           outline: "none",
         }}
@@ -38,17 +38,17 @@ const Inputs = () => {
       </select>
       <div
         style={{
-          width: "180px",
+          width: "13.177159590043924vw",
           display: "flex",
-          height: "50px",
+          height: "4.0096230954290295vw",
           alignItems: "center",
-          marginLeft: "60px",
+          marginLeft: "5vw",
           justifyContent: "space-between",
         }}
       >
-        <VscBellDot size="22px" />
-        <AiOutlineUser size="22px" />
-        <img src={img} alt="user" style={{ width: "26px", height: "26px" }} />
+        <VscBellDot size="22px" cursor='pointer'/>
+        <AiOutlineUser size="22px" cursor='pointer' />
+        <img src={img} alt="user"  style={{ width: "26px", height: "26px", cursor:'pointer' }} />
       </div>
     </div>
   );

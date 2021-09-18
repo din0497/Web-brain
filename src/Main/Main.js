@@ -1,3 +1,5 @@
+import BarChart from "../Chart/Chart";
+import Charts from "../Chart/Charts";
 import { MainContainer } from "../Styled/Styled";
 import Body from "./Body";
 import Inputs from "./Inputs";
@@ -9,6 +11,7 @@ const Main = () => {
       <Inputs />
       <Items/>
       <Body/>
+      <Charts/>
     </MainContainer>
   );
 };

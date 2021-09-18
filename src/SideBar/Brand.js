@@ -1,10 +1,14 @@
 import img from "../assets/brand.png";
+import { BrandWrapper } from "../Styled/Styled";
 const Brand = (props) => {
   return (
-    <div style={{ display: "flex", alignItems: "center", marginLeft: "15px"}}>
-      <img src={img} style={{ width: "26px", height: "26px", marginRight:'10px' }} />
-      <h3>iffee</h3>
-    </div>
+    < BrandWrapper>
+      <img
+        src={img}
+        style={{ width: "2vw", height: "2vw", marginRight: "1vw" }}
+      />
+      <h3 style={{ fontSize: "2vw" }}>iffee</h3>
+    </BrandWrapper>
   );
 };
 export default Brand;

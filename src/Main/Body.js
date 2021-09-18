@@ -5,8 +5,11 @@ import {
   BodyWrapper,
   CarImage,
   Icon,
+  Img,
   Wrapper,
 } from "../Styled/Styled";
+import image from "../assets/car.png";
+
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Stats from './Stats/Stats'
 
@@ -21,7 +24,7 @@ const Body = (props) => {
             <Icon>{<IoIosArrowForward />}</Icon>
           </BodyIcon>
         </BodyWrapper>
-        <CarImage />
+        <Img src={image}/>
       </BodyStyle>
       <Stats/>
     </Wrapper>

@@ -8,7 +8,7 @@ const ScheduledRace = (props) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        paddingLeft: "25px",
+        paddingLeft: "1.83vw",
       }}
     >
       <H4>Scheduled Race</H4>
